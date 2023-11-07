@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Plotter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Enter Values</h1>
+    <div id="inputBox">
+        <input type="number" id="inputValue" placeholder="Input Value" >
+        <input type="number" id="maxValue" placeholder="Max Value" >
+        <button onclick="plotGraph()">Plot Graph</button>
+
+    </div>
+
+    <p>Graphs</p>
+    <div id="graphBox">
+        <div style="width: 80px;text-align: center;">
+
+            <div class="graph-container">
+                <div id="progress-bar"></div>
+            </div>
+            <h3 class="percentage">0%</h3>
+        </div>
+        <div style="position: relative;">
+
+            <svg id="progress-circle" xmlns="http://www.w3.org/2000/svg">
+                <circle class="circle" cx="150" cy="150" r="150"></circle>
+
+            </svg>
+            <h3 style="text-align: center;margin-top: -100px;color: white;" class="percentage">0%</h3>
+        </div>
+
+        <div style="width: 80px;text-align: center;">
+
+            <div id="progress-container" class="graph-container">
+                <div id="progress-rectangle"></div>
+            </div>
+            <h3 class="percentage">0%</h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
